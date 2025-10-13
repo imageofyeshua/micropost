@@ -18,5 +18,11 @@
 body {
   background-image: url('bg-header-desktop.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-image: url('bg-header-mobile.png');
+  }
 }
