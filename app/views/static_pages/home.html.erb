@@ -1,0 +1,16 @@
+<section id="hero">
+  <div class="max-w-6xl mx-auto text-center mb-40 px-10">
+    <%= image_tag "logo.svg", alt: "", class: "mx-auto my-16" %>
+    <h3 class="mb-8 text-4xl font-bold text-dark-grayish-blue md:text-5xl">
+      A history of everything you have walked...
+    </h3>
+    <p class="mx-w-3xl mx-auto mb-10 text-2xl text-grayish-blue">
+      Our Father in heaven, sanctified be Thy Name, Thy kingdom come, Thy will be done on earth as it is in heaven...
+    </p>
+    <!-- Button Container -->   
+    <div class="flex flex-col justify-center w-full space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x4">
+      <%= link_to "Read Bible", root_path, class: "p-4 px-8 mr-2 rounded-full shadow-lg bg-strong-cyan duration-200 hover:opacity-80" %>
+      <%= link_to "Blog Messages", root_path, class: "p-4 px-8 rounded-full shadow-lg bg-light-blue duration-200 hover:opacity-80" %>
+    </div>
+  </div>
+</section>
