@@ -7,11 +7,13 @@
     <p class="mx-w-3xl mx-auto mb-10 text-2xl text-grayish-blue">
       Our Father in heaven, sanctified be Thy Name, Thy kingdom come, Thy will be done on earth as it is in heaven...
     </p>
+
     <!-- Button Container -->   
     <div class="button-container">
       <%= link_to "Read Bible", root_path, class: "p-4 px-8 mr-2 rounded-full shadow-lg bg-strong-cyan duration-200 hover:opacity-80" %>
       <%= link_to "Blog Messages", root_path, class: "p-4 px-8 rounded-full shadow-lg bg-light-blue duration-200 hover:opacity-80" %>
     </div>
+
     <!-- Snippets Section -->
     <section id="snippet">
       <div class="section-container my-20">
@@ -23,6 +25,7 @@
         </p>
       </div>
     </section>
+
     <!-- Features Section -->
     <section id="features">
       <div class="section-container my-20">
@@ -62,6 +65,7 @@
         </div>
       </div>
     </section>
+    
     <!-- Access Anywhere Section -->
     <section id="access">
       <div class="section-container my-20">
@@ -72,6 +76,7 @@
         <%= image_tag "image-devices.png", alt: "", class: "mx-auto" %>
       </div>
     </section>
+
     <!-- Supercharge Section -->
     <section id="supercharge">
       <div class="section-container my-20">
@@ -106,6 +111,17 @@
             </p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references">
+      <div class="flex flex-col items-center justify-between max-w-6xl px-10 mx-auto space-y-16 my-44 md:flex-row md:space-y-0">
+        <%= image_tag "logo-google.png", alt: "", class: "" %>
+        <%= image_tag "logo-ibm.png", alt: "", class: "" %>
+        <%= image_tag "logo-microsoft.png", alt: "", class: "" %>
+        <%= image_tag "logo-hp.png", alt: "", class: "" %>
+        <%= image_tag "logo-vector-graphics.png", alt: "", class: "" %>
       </div>
     </section>
   </div>
