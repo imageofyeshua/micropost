@@ -20,6 +20,11 @@
   body {
     background-image: url('bg-header-mobile.png');
   }
+
+  #hero {
+    background-image: url('mobile/image-hero.jpg');
+    background-position: center;
+  }
 }
 
 @layer base {
@@ -48,6 +53,12 @@ body {
   background-image: url('bg-header-desktop.png');
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+#hero {
+  background-image: url('desktop/image-hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .ficon:hover {
