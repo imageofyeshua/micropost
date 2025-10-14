@@ -10,7 +10,8 @@
   --color-dark-grayish-blue: hsl(210, 10%, 33%);
   --color-grayish-blue: hsl(201, 11%, 66%);
 
-  --font-sans: "Bai Jamjuree", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans: "Josefin Sans", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-alata: "Alata";
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
