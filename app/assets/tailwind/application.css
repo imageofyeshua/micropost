@@ -18,11 +18,11 @@
 
 @media (max-width: 576px) {
   body {
-    background-image: url('bg-header-mobile.png');
+    background-image: url('vineyard.jpg');
   }
 
   #hero {
-    background-image: url('mobile/image-hero.jpg');
+    background-image: url('desktop/vineyard.jpg');
     background-position: center;
   }
 }
@@ -50,13 +50,13 @@
 }
 
 body {
-  background-image: url('bg-header-desktop.png');
+  background-image: url('vineyard.jpg');
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 #hero {
-  background-image: url('desktop/image-hero.jpg');
+  background-image: url('desktop/vineyard.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
