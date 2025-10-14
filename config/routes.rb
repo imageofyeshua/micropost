@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root "static_pages#home"
   get "static_pages/home"
   get "static_pages/help"
   get "static_pages/about"
@@ -13,5 +14,4 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   # Defines the root path route ("/")
-  root "static_pages#home"
 end
