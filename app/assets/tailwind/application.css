@@ -17,6 +17,7 @@
 }
 
 @media (max-width: 576px) {
+  /*
   body {
     background-image: url('vineyard.jpg');
   }
@@ -25,6 +26,7 @@
     background-image: url('desktop/vineyard.jpg');
     background-position: center;
   }
+  */
 }
 
 @layer base {
@@ -50,9 +52,11 @@
 }
 
 body {
+  /*
   background-image: url('vineyard.jpg');
   background-repeat: no-repeat;
   background-size: contain;
+  */
 }
 
 #hero {
