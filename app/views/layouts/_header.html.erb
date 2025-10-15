@@ -4,7 +4,9 @@
   <div class="container max-w-6xl mx-auto px-6 py-12">
     <!-- Menu/Logo Container -->
     <nav class="flex items-center justify-between font-bold text-white">
-      <%= image_tag "ekklesia-logo.jpg", alt: "", class: "w-48" %>
+      <%= link_to root_path do %>
+        <%= image_tag "ekklesia-logo.jpg", alt: "", class: "w-48" %>
+      <% end %>
       <!-- Menu -->
       <div class="hidden h-10 font-alata text-2xl md:flex md:space-x-8">
         <div class="group">
