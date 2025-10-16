@@ -26,11 +26,11 @@
           <%= link_to "Profile", class: "" %>
           <div class="mx-1 group-hover:border-b-2 group-hover:border-blue-300"></div>
         </div>
-      <% else %>
         <div class="group">
-          <%= link_to "Signup", signup_path, class: "" %>
+          <%= link_to "Logout", logout_path, data: { "turbo_method": :delete }, class: "" %>
           <div class="mx-1 group-hover:border-b-2 group-hover:border-blue-300"></div>
         </div>
+      <% else %>
         <div class="group">
           <%= link_to "Login", login_path, class: "" %>
           <div class="mx-1 group-hover:border-b-2 group-hover:border-blue-300"></div>
