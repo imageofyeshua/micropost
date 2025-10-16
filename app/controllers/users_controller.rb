@@ -10,9 +10,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:green] = "Welcome to Shema Ekklesia! #{@user.name}"
+      flash[:notice] = "Welcome to Shema Ekklesia! #{@user.name}"
       redirect_to @user
     else
+      # flash[:alert] = "Error creating user account!"
       render 'new', status: :unprocessable_entity
     end
   end

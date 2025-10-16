@@ -1,0 +1,5 @@
+<% flash.each do |type, message| %>
+  <div class="<%= flash_class_for(type) %> p-4 rounded-md mb-4">
+    <%= message %>
+  </div>
+<% end %>
