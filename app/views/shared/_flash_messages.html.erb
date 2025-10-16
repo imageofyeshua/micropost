@@ -1,5 +1,5 @@
 <% flash.each do |type, message| %>
-  <div class="<%= flash_class_for(type) %> p-4 rounded-md mb-4">
+  <div data-controller="autohide" data-autohide-delay-value="7000" class="<%= flash_class_for(type) %> p-4 rounded-md mb-4">
     <%= message %>
   </div>
 <% end %>
