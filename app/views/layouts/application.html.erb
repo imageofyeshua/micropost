@@ -27,7 +27,7 @@
 
   <body>
     <%= render 'layouts/header' %>
-    <main class="min-h-screen bg-rose-50">
+    <main class="flex items-center justify-center min-h-screen bg-rose-50">
       <%= yield %>
     </main>
     <%= debug(params) if Rails.env.development? %>
