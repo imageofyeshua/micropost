@@ -21,14 +21,21 @@
         <%= link_to "Contact", contact_path, class: "" %>
         <div class="mx-1 group-hover:border-b-2 group-hover:border-blue-300"></div>
       </div>
-      <div class="group">
-        <%= link_to "Signup", signup_path, class: "" %>
-        <div class="mx-1 group-hover:border-b-2 group-hover:border-blue-300"></div>
-      </div>
-      <div class="group">
-        <%= link_to "Login", login_path, class: "" %>
-        <div class="mx-1 group-hover:border-b-2 group-hover:border-blue-300"></div>
-      </div>
+      <% if logged_in? %>
+        <div class="group">
+          <%= link_to "Profile", class: "" %>
+          <div class="mx-1 group-hover:border-b-2 group-hover:border-blue-300"></div>
+        </div>
+      <% else %>
+        <div class="group">
+          <%= link_to "Signup", signup_path, class: "" %>
+          <div class="mx-1 group-hover:border-b-2 group-hover:border-blue-300"></div>
+        </div>
+        <div class="group">
+          <%= link_to "Login", login_path, class: "" %>
+          <div class="mx-1 group-hover:border-b-2 group-hover:border-blue-300"></div>
+        </div>
+      <% end %>
     </div>
     <!-- Hamburger Button -->
   </nav>
