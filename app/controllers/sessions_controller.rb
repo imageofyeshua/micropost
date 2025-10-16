@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email].strip.downcase)
     if user && user.authenticate(params[:session][:password])
     else
-      flash[:alert] = "Invalid email/password combination"
+      flash.now[:alert] = "Invalid email/password combination"
       render 'new', status: :unprocessable_entity
     end
   end
