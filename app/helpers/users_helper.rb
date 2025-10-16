@@ -5,7 +5,7 @@ module UsersHelper
   def gravatar_for(user, options = { size: 60 })
     size = options[:size]
     gravatar_id = Digest::SHA256::hexdigest(user.email.downcase)
-    default = "https://www.example.com/default.jpg"
+    default = "https://placehold.co/300x200?text=#{user.name}"
     params = URI.encode_www_form('d' => default, 's' => size)
     image_src = "https://gravatar.com/avatar/#{gravatar_id}?#{params}"
     image_tag(image_src, alt: user.name, class: "gravatar")
