@@ -11,10 +11,8 @@ end
 class InvalidPasswordTest < UsersLogin
 
   test "login path" do
-    get login_path do
-      get login_path
-      assert_template 'sessions/new'
-    end
+    get login_path
+    assert_template 'sessions/new'
   end
 
   test "login with valid email/invalid password" do
@@ -43,7 +41,7 @@ class ValidLoginTest < ValidLogin
     assert is_logged_in?
     assert_redirected_to @user
   end
-  
+
   test "redirect after login" do
     follow_redirect!
     assert_template 'users/show'
@@ -82,6 +80,23 @@ class LogoutTest < Logout
   test "should still work after logout in second window" do
     delete logout_path
     assert_redirected_to root_url
+  end
+
+end
+
+class RememberingTest < UsersLogin
+
+  test "login with remembering" do
+    log_in_as(@user, password: 'password', remember_me: '1')
+    assert_not cookies[:remember_token].blank?
+  end
+
+  test "login without remembering" do
+    # Login to set the cookie.
+    log_in_as(@user, password: 'password', remember_me: '1')
+    # Login again and verify that the cookie is deleted
+    log_in_as(@user, password: 'password', remember_me: '0')
+    assert cookies[:remember_token].blank?
   end
 
 end
