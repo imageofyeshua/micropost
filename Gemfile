@@ -11,6 +11,7 @@ gem "tailwindcss-rails"
 gem "jbuilder"
 gem "bcrypt"
 gem "faker"
+gem "will_paginate"
 
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
