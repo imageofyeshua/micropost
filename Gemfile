@@ -10,6 +10,7 @@ gem "stimulus-rails"
 gem "tailwindcss-rails"
 gem "jbuilder"
 gem "bcrypt"
+gem "faker"
 
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
