@@ -44,7 +44,7 @@
               <%= link_to "Profile" %>
             </div>
             <div class="w-full text-left font-light text-lg px-4 py-2 hover:bg-blue-100 hover:text-blue-700 text-blue-800" >
-              <%= link_to "Settings" %>
+              <%= link_to "Settings", edit_user_path(current_user) %>
             </div>
             <hr class="my-1 border-gray-200">
             <%= button_to "Logout", logout_path, method: :delete, class: "w-full text-left font-light text-lg px-4 py-2 hover:bg-rose-100  hover:text-rose-700 text-rose-800" %>
