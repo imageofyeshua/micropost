@@ -1,6 +1,8 @@
 <% provide :title, "All users" %>
 <h1 class="text-xl font-bold mb-4">All users</h1>
 
+<%= render partial: "shared/pagination", locals: { records: @users } %>
+
 <ul class="">
   <% @users.each do |user| %>
     <li class="flex flex-row gap-2 mb-3">
@@ -12,15 +14,5 @@
   <% end %>
 </ul>
 
-<div class="text-center my-4">
-  <div role="navigation" aria-label="Pagination" class="px-3 py-2 mx-2 text-gray-700 no-underline bg-white rounded-lg">
-    <div class="flickr_pagination">
-      <div class="py-4">
-        <%= page_entries_info @users %>
-      </div>
-      <div class="py-4">
-        <%= will_paginate @users %>
-      </div>
-    </div>
-  </div>
-</div>
+<%= render partial: "shared/pagination", locals: { records: @users } %>
+
