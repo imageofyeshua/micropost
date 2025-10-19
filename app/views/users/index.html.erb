@@ -6,7 +6,7 @@
 <ul class="pagination">
   <% @users.each do |user| %>
     <li class="flex flex-row gap-2 mb-3">
-      <%= gravatar_for(user.email, 50) %> 
+      <%= gravatar_for(user.email, 40) %> 
       <div class="px-3 py-3 font-bold hover:text-gray-400">
         <%= link_to user.name, user %>
       </div>
